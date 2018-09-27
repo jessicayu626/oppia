@@ -14,16 +14,14 @@
 
 """Main package for URL routing for requests originating from the task queue."""
 
-# pylint: disable=relative-import
 
-from core.controllers import tasks
-from core.platform import models
-import feconf
-import main
+from .core.controllers import tasks
+from .core.platform import models
+from . import feconf
+from . import main
 
 import webapp2
 
-# pylint: enable=relative-import
 
 
 transaction_services = models.Registry.import_transaction_services()

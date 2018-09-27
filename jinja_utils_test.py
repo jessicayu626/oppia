@@ -14,10 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# pylint: disable=relative-import
 
-from core.tests import test_utils
-import jinja_utils
+from .core.tests import test_utils
+from . import jinja_utils
 
 
 class JinjaUtilsUnitTests(test_utils.GenericTestBase):
